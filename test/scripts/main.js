@@ -1,12 +1,3 @@
-function multiply(num1,num2) {
-    let result = num1 * num2;
-    return result;
-  }
-
-
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-
 let myImages = document.querySelectorAll('img');
 
 myImages.forEach(function(myImage) {
@@ -19,29 +10,3 @@ myImages.forEach(function(myImage) {
         }
     }
  });
-
-
- function setUserName() {
-    let myName = prompt('이름을 넣으세요.');
-
-    if(!myName || myName === null) {
-        setUserName();
-    }
-    else{
-        localStorage.setItem('name', myName);
-        myHeading.textContent = 'Happy New Year!, ' + myName;
-    }
-  }
-
-  /*
-    if(!localStorage.getItem('name')) {
-    setUserName();
-  } else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Happy New Year!, ' + storedName;
-  }
-
-  myButton.onclick = function() {
-    setUserName();
-  }
-  */
