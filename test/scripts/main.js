@@ -33,7 +33,8 @@ myImages.forEach(function(myImage) {
     }
   }
 
-  if(!localStorage.getItem('name')) {
+  /*
+    if(!localStorage.getItem('name')) {
     setUserName();
   } else {
     let storedName = localStorage.getItem('name');
@@ -43,3 +44,4 @@ myImages.forEach(function(myImage) {
   myButton.onclick = function() {
     setUserName();
   }
+  */
